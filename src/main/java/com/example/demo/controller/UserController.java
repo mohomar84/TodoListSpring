@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.model.AuthModel;
 import com.example.demo.services.UserServices;
 
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin(origins = "http://localhost:8000", maxAge = 3600)
 @RestController
 @RequestMapping("/userservice")
 public class UserController {
